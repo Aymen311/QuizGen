@@ -6,17 +6,16 @@ import json
 
 #load quizz data from json file
 
-import os
 
-def file_selector(folder_path='.'):
-    filenames = os.listdir(folder_path)
-    selected_filename = st.selectbox('Select a file', filenames)
-    return os.path.join(folder_path, selected_filename)
+# def file_selector(folder_path='.'):
+#     filenames = os.listdir(folder_path)
+#     selected_filename = st.selectbox('Select a file', filenames)
+#     return os.path.join(folder_path, selected_filename)
 
-filename = file_selector()
-st.write('You selected `%s`' % filename)
+# filename = file_selector()
+# st.write('You selected `%s`' % filename)
 
-with open('./pages/quiz.json') as f:
+with open('./app/pages/quiz.json') as f:
     data = json.load(f)
 
 
