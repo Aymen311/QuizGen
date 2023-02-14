@@ -22,12 +22,12 @@ def generate_quiz(topic, num_questions):
         Quiz["propositions"].append(questions[i][1:5])
         Quiz["answers"].append(questions[i][-1])
     #Add quizz to json file
-    data = json.load(open('../app/quiz.json'))    
+    data = json.load(open('../quiz.json'))    
     data["Quizz"].append(Quiz)
     data["topic"].append(topic)
     data["num_questions"].append(num_questions)
     #save quizz to json file
-    json.dump(data, open('../app/quiz.json', 'w'))
+    json.dump(data, open('../quiz.json', 'w'))
     return Quiz
 
 
