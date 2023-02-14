@@ -5,7 +5,9 @@ import random
 import json
 
 #load quizz data from json file
-data = json.load(open('../quiz.json'))
+
+with open('./pages/quiz.json') as f:
+    data = json.load(f)
 
 
 #Set a title for the app
