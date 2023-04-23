@@ -1,6 +1,11 @@
 # QuizGen
 
-QuizGen is a simple quiz generator that uses OpenAI's GPT-3 language model to create unique questions and answers.
+QuizGen is a simple quiz generator that uses OpenAI's GPT-3 language model, fine-tuned on stack-exchange Q/As, to create unique questions and answers.
+
+the complete pipeline for this project can be seen in this diagram
+
+![Architecture-INFRA drawio](https://user-images.githubusercontent.com/59454072/233842471-93cf82f5-117a-4ca9-b974-9e7b0157d702.png)
+
 
 ## Getting Started
 
